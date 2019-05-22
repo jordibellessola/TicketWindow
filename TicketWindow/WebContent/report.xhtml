@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <title>Ticket Window</title>
+
+</h:head>
+<h:body>
+<h1>Occupancy report</h1>
+	<ui:repeat var="seatL" value="#{ticketWindowBackingBean.getSeats()}">
+		<ui:repeat var="seat" value="#{seatL}">
+			<h:outputText value="#{seat.toString()}" /><br />		
+		</ui:repeat>
+	</ui:repeat>
+
+
+
+  <br />
+  <h:link value="back to ticket window" outcome="index.xhtml" />
+
+</h:body>
+</html>

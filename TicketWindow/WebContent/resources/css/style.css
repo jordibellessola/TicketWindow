@@ -1,0 +1,23 @@
+
+body {
+	font-family: arial;
+}
+
+.availableButton {
+	background: green;
+}
+
+.soldButton {
+	background: red;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	width:4em;
+	text-align: center;
+}
+
